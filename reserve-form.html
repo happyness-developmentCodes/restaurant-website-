@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family:Poppins, sans-serif;
+            margin: 0%;
+            background-color:#f5f5f5;
+        }
+        header{
+            background-color:beige;
+            color:gold;
+            padding: 15px;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        nav a{
+            color:black;
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        section{
+                padding: 20px;
+                max-width: 600px;
+                margin: auto;
+            }
+            .card{
+                background-color: beige;
+                border-radius: 15px;
+                padding: 20px;
+                box-shadow: 0 4px 10px rgba(0, 0,0, 1);
+            }
+            button{
+                width: 100%;
+                padding: 12px;
+                background-color: white;
+                color: black;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: bold;
+                }
+ label{
+     font-size: 14px;
+ }
+    .radio-group{
+        margin-bottom: 15px;
+    }
+    footer{
+        text-align: center;
+        padding: 20 px;
+        </style>
+</head>
+<body>
+    <header>
+        <h1>WH Royale</h1>
+        </header>
+        <div class="hero"
+            <h2>Reserve your table</h2>
+        </div>
+    <a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html">Contact  us</a>
+</nav>
+<section class="section" id="reservation">
+    <div class="card">
+        <h2>Luxury Reservation</h2>
+        <form onsubmit="WhatsApp(event)">
+<p><em><strong>Dar es salaam Royal Fine Dining</em></strong></p>
+<h2>Reservation Form</h2>
+<form>
+    <!--Reservation Details-->
+    <h3>Reservation Details</h3>
+    <label>Date</label>
+<input type="date" name="reservation_date"  value="reservationDate" required><br>
+<label>Time</label>
+<input type="time" name="reservation_time" value="reservationTime" required><br>
+<label>Number of guests</label><br>
+<input type="number" name="number_guest" value="number of guests"><br>
+<label>Table  preference:</label><br>
+    <div class="radio-group"
+<input type="radio" name="table" value="standard">standard<br>
+<input type="radio" name="table" value="window(Chandelier View)">window(Chandelier View)<br>
+<input type="radio" name="table" value="Private Corner">Private Corner<br>
+<input type="radio" name="table" value="VIP Booth">VIP Booth<br>
+    </div>
+<!--Guest Information-->
+<h3>Guest Information</h3>
+<label >Full Name</label>
+<input type="text" name="fullname"><br>
+<label>Phone Number</label>
+<input type="tel" name="Phone Number"><br>
+<label> Email Address</label>
+<input type="email" name="Email Address"><br>
+<!--Special Requests-->
+<h3>Special Requests</h3>
+<label >Birthday/Anniversary Celebration?</label>
+<input type="text" name="Birthday/Anniversary Celebration?"><br>
+<label>Dietary requirements</label>
+<input type="text" name="Dietary requirements"><br>
+<label>Any allergies?</label><br>
+<input type="text" name="any allergies?"><br>
+<label>Wine Pairing requested?</label><br>
+<input type="radio" name="table" value="Yes">Yes <br>
+<input type="radio" name="table" value="No">No <br>
+<!--MARKETING-->
+<h3>How did you hear about us</h3>
+<input type="checkbox" name="instagram" value="instagram">Instagram<br>
+<input type="checkbox" name="friend recommendation" value="friendRecommendation">Friend Recommendation<br>
+<input type="checkbox" name="website" value="website">Website<br>
+<input type="checkbox" name="hotel_concierge" value="hotelConcierge">Hotel Concierge<br>
+<input type="checkbox" name="other" id="other">Other<br>
+<!--Declaration-->
+<h3>Declaration</h3>
+<p>I understand that a 10% service charge will be added to the final bill.Cancellations must be made atleast 4 hours in advance</p>
+<label>Signature</label>
+<input type="text"><br>
+<label>Date</label>
+<input type="date"><br>
+<button type="submit">Reserve via WhatsApp</button>
+<!--Submit-->
+<h3>How to Submit</h3>
+<p>Fill this form and send via WhatsApp to:+255 734 186 593 <br>
+or emai to: reservation@Whroyale.co.tz <br>
+or Call us directly for instant booking</p>
+<p><em><strong>Thank you for choosing Wenseslaous and Happiness HappinessRoyale</em></strong></p>
+<p><em><strong>Where Joy Meets Majesty</em></strong></p></button>
+</form>
+</div>
+</section>
+    <p>&copy;Wenseslaous Happiness Royale|Built by Happiness</p>
+        </footer>
+    <script>
+    function send WhatsApp(e){
+        e.preventDefault();
+        let name= document.getElementById("name").Value;
+        let phone= document.getElementById("phone").Value;
+        let date= document.getElementById("date").Value;
+        let time= document.getElementById("time").Value;
+        let guests= document.getElementById("guests").Value;
+        let requests= document.getElementById("requests").Value;
+        let table= document.querySelector('input[name="table"]:checked').Value;
+        
+        let message='Reservation Request%0A'
+        Name: ${name}%0APhone: ${phone}%0ADate: ${date}%0ATime: ${time}%0AGuests: ${guests}%0ATable :${table}%0ARequests: ${requests}';
+        
+        let whatsapp Number = :"0699742978"
+        window.open('https://wa.me/${0699742978'}?text=${message},'_blank');
+    }
+    </script>
+</body>
+</html>
