@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenseslaous Happiness Royale</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            color: #fff;
+            background-color: #111;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: beige;
+            color: gold;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+            color: gold;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 5px 10px;
+            font-weight: bold;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding-top: 100px; /* prevents overlap with fixed header */
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .hero-img {
+            width: 90%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            color: gold;
+        }
+
+        /* SECTIONS*/
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: #222;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: beige;
+            color: black;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>WH Royale</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserve-form.html">Form</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="Home">
+    <h2>Fresh & Delicious Food</h2>
+    <p>Where royal elegance meets modern deliciousness.</p>
+    <p>Discover Wenseslaous and Happiness Royale</p>
+
+    <!-- IMAGE FOUND HERE (FIXED LOCATION) -->
+    <img src="image-1.jpg" alt="Restaurant Image" class="hero-img">
+
+    <a href="menu.html">View Menu</a>
+</section>
+
+<!-- ABOUT -->
+<section id="About" class="section">
+    <div class="card">
+        <h2>About us</h2>
+
+        <p>Wenseslaous and Happiness Royale is Dar es salaam most extraordinary fine dining destination, a modern space where timeless royal elegance meets bold, innovative cuisine.</p>
+
+        <p>Born from passion to create unforgettable memories of joy and luxury, we reimagine classic European grandeur with contemporary flair and East African hospitality. Every detail from our golden crest and sparkling chandeliers to our theatrical tableside presentations is designed to make every guest feel truly royal.</p>
+
+        <p>We source the finest ingredients from Tanzania and beyond, transforming them into signature dishes such as our renowned Golden Crown Scallops.</p>
+
+        <p>Paired with an exceptional wine selection, Wenseslaous and Happiness offers more than just a meal—it delivers a complete sensory experience.</p>
+
+        <p>Whether you are celebrating love, success or simply life’s beautiful moments we invite you to dine like royalty in the heart of Dar es Salaam.</p>
+
+        <h5>Our Philosophy</h5>
+        <p>Delicious food should be extraordinary.<br> Dining should feel magical.</p>
+    </div>
+</section>
+    
+<section class="section" id="menu">
+    <div class="card">
+        <h2>Our Menu</h2>
+<h3>Signature Starters</h3>
+<h4>Golden Crown Scallops</h4>
+<p>Pan seared scallops served with saffron rice and a light champagne sauce, finished with edible gold.</p>
+<span class="price">$25</span>
+<h4>Foie Gras Royale</h4>
+<p>Seared duck liver with honey glaze, black truffle, and toasted brioche.</p>
+<span class="price">$28</span>
+<h4>Lobster Bisque</h4>
+<p>Creamy lobster soup with a touch of vanilla and cognac, topped with fresh lobster pieces.</p>
+<span class="price">$22</span>
+<h4>Truffle Mushroom Soup</h4>
+<p>Rich mushroom soup infused with black truffles and cream.</p>
+<span class="price">$18</span>
+<h3>Main Courses</h3>
+<h4>Royal Wagyu</h4>
+<p>Premium Wagyu beef wrapped in crispy pastry with mushrooms and spinach, served with a red wine reduction.</p>
+<span class="price">$65</span>
+<h4>Happiness Royale Salmon</h4>
+<p>Oven baked salmon with citrus and herbs, served with asparagus and yuzu butter sauce.</p>
+<span class="price">$42</span>
+<h4>Stuffed Quail</h4>
+<p>Whole quail filled with mushrooms, truffles, and foie gras, glazed with balsamic reduction and served with roasted vegetables.</p>
+<span class="price">$48</span>
+<h4>Grilled Beef Fillet </h4>
+<p>Tender beef fillet served with your choice of peppercorn or mushroom sauce and roasted potatoes.</p>
+<span class="price">$55</span>
+<h4>Grilled Vegetable Plate</h4>
+<p>Seasonal grilled vegetables with truffle sauce.</p>
+<span class="price">$22</span>
+<h3>Platters</h3>
+<h4>SeaFood Platter (for two)</h4>
+<p>Prawns, calamari, lobster, and white snapper.</p>
+<span class="price">$75</span>
+<h4> SeaFood Platter (for four)</h4>
+<p>Prawns, calamari, octopus, lobster, kingfish, and baby snapper.</p>
+<span class="price">$90</span>
+<h3>Desserts</h3>
+<h4>Chocolate Symphony</h4>
+<p>Dark chocolate dome with passion fruit and praline, served with vanilla ice cream and gold dust.</p>
+<span class="price">$20</span>
+<h4>Vanilla Creme Brulee</h4>
+<p>Classic vanilla custard with caramelized sugar topping and fresh berries.</p>
+<span class="price">$18</span>
+<h4>Rose Pavlova</h4>
+<p>Light meringue with rose cream, exotic fruits, and rose petals.</p>
+<span class="price">$14</span>
+<h4>Tiramisu Royale</h4>
+<p>Coffee soaked ladyfingers layered with mascarpone cream and cocoa.</p>
+<span class="price">$13</span>
+<h3>Signature Cocktails</h3>
+<h4>Royale Sparkle </h4>
+<p>Champagne with elder flower and goldflakes.</p>
+<span class="price">$15</span>
+<h4>Happiness Elixir</h4>
+<p>Gin infused with butterfly pea flower.</p>
+<span class="price">$20</span>
+<h4>Wenseslaous Old Fashioned</h4>
+<p>Aged whiskey with vanilla and orange</p>
+<span class="price">$25</span>
+<h3>MOCKTAIL</h3>
+<h4>Virginie Mojito</h4>
+<p>Fresh mint, lime juice, soda water, and crushed ice.</p>
+<span class="price">$12</span>
+<h4>Passion Mojito</h4>
+<p>Fresh mint, passion fruit juice, soda water, and crushed ice. </p>
+<span class="price">$10</span>
+<h4>Strawberry Mojito</h4>
+<p>Fresh strawberries, lime juice, soda water, and crushed ice.</p>
+<span class="price">$14</span>
+<h4><em>"All our dishes are freshly prepared daily using the finest ingredients</em></h4>
+</div>
+    </section>
+    <section class="section" id="reservation">
+    <div class="card">
+        <h2>Luxury Reservation</h2>
+        <form onsubmit="WhatsApp(event)">
+<p><em><strong>Dar es salaam Royal Fine Dining</em></strong></p>
+<h2>Reservation Form</h2>
+<form>
+    <!--Reservation Details-->
+    <h3>Reservation Details</h3>
+    <label>Date</label>
+<input type="date" name="reservation_date"  value="reservationDate" required><br>
+<label>Time</label>
+<input type="time" name="reservation_time" value="reservationTime" required><br>
+<label>Number of guests</label><br>
+<input type="number" name="number_guest" value="number of guests"><br>
+<label>Table  preference:</label><br>
+    <div class="radio-group"
+<input type="radio" name="table" value="standard">standard<br>
+<input type="radio" name="table" value="window(Chandelier View)">window(Chandelier View)<br>
+<input type="radio" name="table" value="Private Corner">Private Corner<br>
+<input type="radio" name="table" value="VIP Booth">VIP Booth<br>
+    </div>
+<!--Guest Information-->
+<h3>Guest Information</h3>
+<label >Full Name</label>
+<input type="text" name="fullname"><br>
+<label>Phone Number</label>
+<input type="tel" name="Phone Number"><br>
+<label> Email Address</label>
+<input type="email" name="Email Address"><br>
+<!--Special Requests-->
+<h3>Special Requests</h3>
+<label >Birthday/Anniversary Celebration?</label>
+<input type="text" name="Birthday/Anniversary Celebration?"><br>
+<label>Dietary requirements</label>
+<input type="text" name="Dietary requirements"><br>
+<label>Any allergies?</label><br>
+<input type="text" name="any allergies?"><br>
+<label>Wine Pairing requested?</label><br>
+<input type="radio" name="table" value="Yes">Yes <br>
+<input type="radio" name="table" value="No">No <br>
+<!--MARKETING-->
+<h3>How did you hear about us</h3>
+<input type="checkbox" name="instagram" value="instagram">Instagram<br>
+<input type="checkbox" name="friend recommendation" value="friendRecommendation">Friend Recommendation<br>
+<input type="checkbox" name="website" value="website">Website<br>
+<input type="checkbox" name="hotel_concierge" value="hotelConcierge">Hotel Concierge<br>
+<input type="checkbox" name="other" id="other">Other<br>
+<!--Declaration-->
+<h3>Declaration</h3>
+<p>I understand that a 10% service charge will be added to the final bill.Cancellations must be made atleast 4 hours in advance</p>
+<label>Signature</label>
+<input type="text"><br>
+<label>Date</label>
+<input type="date"><br>
+<button type="submit">Reserve via WhatsApp</button>
+<!--Submit-->
+<h3>How to Submit</h3>
+<p>Fill this form and send via WhatsApp to:+255 734 186 593 <br>
+or emai to: reservation@Whroyale.co.tz <br>
+or Call us directly for instant booking</p>
+<p><em><strong>Thank you for choosing Wenseslaous and Happiness HappinessRoyale</em></strong></p>
+<p><em><strong>Where Joy Meets Majesty</em></strong></p></button>
+</form>
+</div>
+</section>
+    <p>&copy;Wenseslaous Happiness Royale|Built by Happiness</p>
+        </footer>
+    <script>
+    function send WhatsApp(e){
+        e.preventDefault();
+        let name= document.getElementById("name").Value;
+        let phone= document.getElementById("phone").Value;
+        let date= document.getElementById("date").Value;
+        let time= document.getElementById("time").Value;
+        let guests= document.getElementById("guests").Value;
+        let requests= document.getElementById("requests").Value;
+        let table= document.querySelector('input[name="table"]:checked').Value;
+        
+        let message='Reservation Request%0A'
+        Name: ${name}%0APhone: ${phone}%0ADate: ${date}%0ATime: ${time}%0AGuests: ${guests}%0ATable :${table}%0ARequests: ${requests}';
+        
+        let whatsapp Number = :"0699742978"
+        window.open('https://wa.me/${0699742978'}?text=${message},'_blank');
+    }
+    </script>
+
+section class="hero"   id="contact"> 
+<h1>Wenseslaous and Happiness Royale</h1>
+</section>
+<!--VISIT US-->
+  <div class="card"
+<h3>Location</h3>
+<p>Sea View Road,Oyster Bay <br>
+   Dar es salaam,Tanzania <br><br>
+   We are proudly located along the beautiful indian ocean Coastline,offering stunning sea views while you dine in royal paradise <br>
+<strong>Landmark :</strong>Opposite Oyster Bay shopping Centre,near beachfront hotels.
+</p>
+  </div>
+<!--CONTACT-->
+<hr></hr>
+  <div class="card"
+<h3>Phone Numbers</h3>
+<label>Reservations +255 734 186 593</label><br>
+<label> General Information&Event +255 699 742 978</label><br>
+<label>WhatsApp (Preferred for bookings) +255 699 742 978</label><br>
+<hr></hr>
+<h3>Email</h3>
+<label><u> reservation@whroyale.co.tz</u></label><br>
+<label><u>events@whroyale.co.tz</u></label><br>
+<label><u>info@whroyale.co.tz</u></label><br>
+<hr></hr>
+<!--HOURS-->
+<h3>Opening Hours</h3>
+<label><strong>Lunch Service</strong>-Tuesday to Sunday :12:00 PM-3:00 PM</label><br>
+<label><strong>Dinner Service</strong>-Tuesday to Sunday:6:30PM-11:00PM</label><br>
+<label><strong>Monday</strong>(Available for private bookings only)</label><br>
+<hr></hr>
+<!--DIRECTIONS-->
+<h3>How to Reach Us</h3>
+<ul>
+    <li>From Julius Nyerere International Airport :20-30 minutes drive</li>
+    <li>Valet Parking Available</li>
+    <li>Complimentary Shuttle from major hotels in Dar es salaam (advance booking required)</li>
+    <li>Bolt/Uber recommended</li>
+</ul>
+<hr></hr>
+<!--SOCIAL MEDIA-->
+<h3>Follow Us</h3>
+<ul>
+    <li>Instagram:@whroyale.dsm</li>
+    <li>Facebook: Wenseslaous and Happiness Royale</li>
+    <li>Tiktok: @whroyale</li>
+    <li>X(Twitter): @WH_Royale</li>
+</ul>
+<hr></hr>
+<!--RESERVATIONS-->
+<h3>For Reservations</h3>
+<p>we recommend booking at least 48 hours in advance,especially for weekends and special occasions</p>
+<h3>Quick Booking Options</h3>
+<ul>
+    <li>Call/WhatsApp : +255 17 682 458</li>
+    <li>Email: <u>reservation@whroyale.co.tz</u></li>
+</ul>
+<hr></hr>
+<!--FOOTER-->
+<footer>
+<p><strong>Thank you for choosing Wenseslaous and Happiness Royale</strong></p>
+<p><em><strong>Where Joy Meets Majesty</strong></em></p>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+    <p>&copy; Wenseslaous Happiness Royale | Built by Happiness</p>
+</footer>
+
+</body>
+</html>
